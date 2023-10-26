@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+  web:
+    build:
+      context: jura_app
+      target: builder
+    volumes:
+      - ./jura_app:/django-tech-test
+    ports:
+      - 8000:8000
